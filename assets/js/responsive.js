@@ -17,3 +17,21 @@ function reportWindowSize() {
 }
 window.onresize = reportWindowSize;
 window.addEventListener('resize', reportWindowSize);
+
+
+function ShowPDF() {
+    var pdfUrl = "assets/pdf/CV-Pacheco.pdf"
+    var pdfContainer = document.getElementById("pdf-box-cv");
+    var pdfObject = document.getElementById("pdf-object-cv");
+    
+    pdfObject.setAttribute("src", pdfUrl);
+    pdfContainer.style.display = "block";
+}
+  
+  function HidePDF() {
+    var pdfContainer = document.getElementById("pdf-box-cv");
+    var pdfObject = document.getElementById("pdf-object-cv");
+    
+    pdfObject.removeAttribute("data");
+    pdfContainer.style.display = "none";
+}

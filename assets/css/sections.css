@@ -1,3 +1,21 @@
+#pdf-box-cv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+  
+#pdf-object-cv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+}
 .container{
     display: flex;
     justify-content: center;
@@ -41,6 +59,7 @@ section ul li::before {
     padding: 10px;
     background-color: #FF3B3F;
     -webkit-mask-size: cover;
+    z-index: -1;
 }
 
 section .container-center{
@@ -91,6 +110,22 @@ section ul .icon-spanish::before {
     -webkit-mask-image: url("../img/spanish.png");
 }
 /* --LANGUAGE */
+
+/* Level */
+section ul .icon-basic::before {
+    -webkit-mask-image: url("");
+}
+section ul .icon-basic {
+    font-weight: bold;
+    padding-left: 10;
+}
+section ul .icon-intermediate::before {
+    -webkit-mask-image: url("");
+}
+section ul .icon-expert::before {
+    -webkit-mask-image: url("");
+}
+/* --Level */
 
 /* SKILLS */
 section ul .icon-java-app::before {
@@ -234,6 +269,7 @@ section .container-right .experience a{
     text-decoration: none;
     color: #FF3B3F;
     text-shadow: 0px 0px 2px #FF3B3F;
+    cursor: pointer;
 }
 section .container-right ul li b{
     margin-right: 5px;
